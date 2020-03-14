@@ -11,6 +11,17 @@ export class CustomMap {
     });
   }
 
+  // possible solution
+  addMarker(mappable: User | Company): void {
+    new google.maps.Marker({
+      map: this.googleMap,
+      position: {
+        lat: mappable.location.lat,
+        lng: mappable.location.lng
+      }
+    });
+  }
+
   // bad - very similar to addCompanyMarker
   // addUserMarker(user: User): void {
   //   new google.maps.Marker({

@@ -7,5 +7,8 @@ const company = new Company();
 
 const map = new CustomMap('map');
 
-map.addUserMarker(user);
-map.addCompanyMarker(company);
+map.addMarker(user);
+map.addMarker(company);
+
+// map.addUserMarker(user);
+// map.addCompanyMarker(company);
